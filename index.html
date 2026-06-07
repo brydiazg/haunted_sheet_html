@@ -15,9 +15,11 @@
     </style>
 </head>
 
+<script>
 
 // STEP 1: MAKE THE MAP
 // MapLibre creates the interactive web map inside the <div id="map"></div>.
+
 var map = new maplibregl.Map({
     container: 'map',
     style: 'https://basemaps.cartocdn.com/gl/positron-gl-style/style.json',
@@ -111,3 +113,5 @@ function handleGoogleSheetData(response) {
         map.getCanvas().style.cursor = '';
     });
 }
+
+</script>
